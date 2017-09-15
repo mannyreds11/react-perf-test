@@ -18,16 +18,18 @@ export default class ColorTile extends Component {
       cursor: 'pointer',
     };
     return (
-      <li
-        style={style}
+      <div
+        role="button"
+        tabIndex="0"
+        onClick={this.remove}
       >
-        <div
-          role="button"
-          tabIndex="0"
-          onClick={this.remove}
-        />
-        {/* {displayKey} */}
-      </li>
+        <li
+          style={style}
+        >
+          {/* {displayKey} */}
+        </li>
+      </div>
+
     );
   }
 }

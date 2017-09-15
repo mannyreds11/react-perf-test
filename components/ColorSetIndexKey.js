@@ -36,7 +36,7 @@ export default class ColorSetIndexKey extends Component {
           key={index}
           displayKey={index}
           color={color}
-          emoveHandler={this.removeHandler}
+          removeHandler={this.removeHandler}
         />)
       );
       /* eslint-disable react/no-array-index-key */
