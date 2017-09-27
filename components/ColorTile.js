@@ -8,7 +8,7 @@ export default class ColorTile extends Component {
   }
 
   render() {
-    const { color } = this.props;
+    const { color, displayKey } = this.props;
     const { hex } = color;
     const style = {
       width: '6rem',
@@ -26,7 +26,7 @@ export default class ColorTile extends Component {
         <li
           style={style}
         >
-          {/* {displayKey} */}
+          {displayKey}
         </li>
       </div>
 
@@ -35,6 +35,7 @@ export default class ColorTile extends Component {
 }
 
 ColorTile.propTypes = {
+  displayKey: PropTypes.string.isRequired,
   removeHandler: PropTypes.func.isRequired,
   color: PropTypes.shape({
     hex: PropTypes.string,

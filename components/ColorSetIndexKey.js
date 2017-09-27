@@ -1,7 +1,8 @@
 import { Component } from 'react';
 import Perf from 'react-addons-perf';
-import { colors } from '../env/colors';
 import ColorTile from './ColorTile';
+import Image from './Image';
+import { colors, images } from '../env/config';
 
 export default class ColorSetIndexKey extends Component {
   constructor(props) {
@@ -43,9 +44,16 @@ export default class ColorSetIndexKey extends Component {
     }
 
     return (
-      <ul className="colors-container">
-        { colorTiles }
+      <div className="container">
+        <ul className="colors-container">
+          { colorTiles }
+        </ul>
+        <Image alt="index-key-reconciliation" src={images.INDEX_KEY} />
         <style jsx>{`
+          .container {
+            text-align: center;
+          }
+
           .colors-container {
             list-style-type: none;
             display: flex;
@@ -53,7 +61,7 @@ export default class ColorSetIndexKey extends Component {
             flex-wrap: wrap;
           }
         `}</style>
-      </ul>
+      </div>
     );
   }
 }

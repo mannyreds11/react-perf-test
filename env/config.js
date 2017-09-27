@@ -1,6 +1,6 @@
 module.exports = {
   colors: [
-    { id: 0, hex: '#F9EBEA' },
+    { id: 0, hex: '#FF0000' },
     { id: 1, hex: '#FADBD8' },
     { id: 2, hex: '#D7BDE2' },
     { id: 3, hex: '#BB8FCE' },
@@ -19,7 +19,12 @@ module.exports = {
     { id: 16, hex: '#F7F9F9' },
     { id: 17, hex: '#F2F3F4' },
     { id: 18, hex: '#F4F6F6' },
-    { id: 19, hex: '#17202A' },
+    { id: 19, hex: '#FFFF00' },
     { id: 20, hex: '#566573' },
   ],
+  images: {
+    RANDOM_KEY: '/static/images/reconcile-random.png',
+    INDEX_KEY: '/static/images/reconcile-index.png',
+    PURE: '/static/images/reconcile-pure.png',
+  },
 };

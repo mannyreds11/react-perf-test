@@ -1,6 +1,6 @@
 # react-perf-test
 
-Simple color tile rendering app that allows the user to compare React's perfomance by using `react-addons-perf` against components using random generated keys, index keys or pure components.
+Simple color tile rendering app that allows the user to compare React's perfomance by using `react-addons-perf` against components using random generated keys vs indexed keys.
 
 ## Setup
 Clone the repo:

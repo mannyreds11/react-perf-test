@@ -1,8 +1,9 @@
 import { Component } from 'react';
 import Perf from 'react-addons-perf';
 import { generate } from 'randomstring';
-import { colors } from '../env/colors';
 import ColorTile from './ColorTile';
+import Image from './Image';
+import { colors, images } from '../env/config';
 
 export default class ColorSetRandomKey extends Component {
   constructor(props) {
@@ -45,9 +46,16 @@ export default class ColorSetRandomKey extends Component {
     }
 
     return (
-      <ul className="colors-container">
-        { colorTiles }
+      <div className="container">
+        <ul className="colors-container">
+          { colorTiles }
+        </ul>
+        <Image alt="random-key-reconciliation" src={images.RANDOM_KEY} />
         <style jsx>{`
+          .container {
+            text-align: center;
+          }
+
           .colors-container {
             list-style-type: none;
             display: flex;
@@ -55,7 +63,7 @@ export default class ColorSetRandomKey extends Component {
             flex-wrap: wrap;
           }
         `}</style>
-      </ul>
+      </div>
     );
   }
 }
