@@ -5,6 +5,7 @@ export default () => (
     <ul>
       <li><Link href="/random-key"><a>Random Key</a></Link></li>
       <li><Link href="/index-key"><a>Index Key</a></Link></li>
+      <li><Link href="/mobx"><a>Mobx DevTools</a></Link></li>
     </ul>
   </div>
 );

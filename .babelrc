@@ -4,6 +4,7 @@
     "next/babel"
   ],
   "plugins": [
-    "styled-jsx/babel"
+    "styled-jsx/babel",
+    "transform-decorators-legacy",
   ]
 }

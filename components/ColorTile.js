@@ -35,7 +35,10 @@ export default class ColorTile extends Component {
 }
 
 ColorTile.propTypes = {
-  displayKey: PropTypes.string.isRequired,
+  displayKey: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]).isRequired,
   removeHandler: PropTypes.func.isRequired,
   color: PropTypes.shape({
     hex: PropTypes.string,
