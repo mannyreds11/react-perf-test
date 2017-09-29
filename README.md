@@ -5,7 +5,7 @@ Simple color tile rendering app that allows the user to compare React's perfoman
 ## Setup
 Clone the repo:
 ```
-git clone
+git clone git@github.com:mannyreds11/react-perf-test.git
 ```
 
 
